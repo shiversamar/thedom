@@ -1,0 +1,36 @@
+<!-- Create webpage that allows a user to play the Hi/lo game.
+Create a function that plays the following game: The computer picks a secret random integer between 1 and 100 (both inclusive), and repeatedly asks the user for guesses.
+
+If the users guess is too high or too low, the computer notifies them of that; and if the user guesses the secret number correctly, the computer displays a winning message and the game is over.
+
+If the user has not guessed the secret number in seven tries, the user loses.
+
+Validate the users input. If the user puts a anything other than a number, tell the user they can only use numbers, can clear the input field.
+
+Allow the user to put there name in before the game starts. When the user has won the game, let the user know they have won, using their name. -->
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hi Low</title>
+    <script type="text/javascript" src="hilow.js"></script>
+
+  </head>
+  <body>
+    <h1>Hi low game!</h1>
+    <h2>Start here:</h2>
+    <input id="userName" style="width: 250px" type="text" placeholder="Please enter your first name." />
+    <input type="button" value="Submit" onclick="userName()" />
+    <h3 id="helloName">Hello: ...</h3>
+
+<br><br>
+
+    <input id="userInput" type="text" style="width: 300px" placeholder="Guess the number (between 1 - 100, numbers only.)" />
+    <input type="button"  value="Submit" onclick="randomNum()" />
+    <h2 id="hilowAnswer">Answer</h2>
+  </body>
+</html>
